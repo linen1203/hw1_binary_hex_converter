@@ -1,0 +1,16 @@
+def convert_number():
+    while True:
+        try:
+            num = int(input("請輸入 0-255 之間的數字: "))
+            if 0 <= num <= 255:
+                binary = bin(num)[2:].zfill(8)
+                hexadecimal = hex(num)[2:].upper().zfill(2)
+                print(f"二進位: {binary}")
+                print(f"十六進位: {hexadecimal}")
+                break
+            else:
+                print("請輸入範圍內的數字！")
+        except ValueError:
+            print("請輸入有效的整數！")
+
+convert_number()
