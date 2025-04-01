@@ -14,3 +14,5 @@ def convert_number():
             print("請輸入有效的整數！")
 
 convert_number()
+二進位: 01100100
+十六進位: 64
